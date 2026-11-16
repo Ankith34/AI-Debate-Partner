@@ -52,7 +52,13 @@ def mascot(emotion):
 STYLE = """<style>
 #MainMenu, footer, header {visibility: hidden;}
 .block-container {max-width: 700px; padding-top: 1.5rem;}
-.mascot {text-align: center; animation: bob 2.5s ease-in-out infinite;}
+.mascot {position: fixed; top: 70px; left: calc(50% + 370px); z-index: 999;
+  animation: bob 2.5s ease-in-out infinite;}
+.mascot svg {width: 140px; height: 140px;}
+@media (max-width: 1100px) {
+  .mascot {top: 8px; left: auto; right: 8px;}
+  .mascot svg {width: 80px; height: 80px;}
+}
 @keyframes bob {0%,100% {transform: translateY(0);} 50% {transform: translateY(-6px);}}
 h1, h3 {text-align: center; font-weight: 600;}
 .caption {text-align: center; color: #888; margin-bottom: 1rem;}
