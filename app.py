@@ -39,7 +39,7 @@ api_key = get_api_key()
 if not api_key:
     st.error("GEMINI_API_KEY not found. Add it to a `.env` file (local) or Streamlit Secrets (cloud).")
     st.stop()
-client = genai.Client(api_key=api_key)
+client = genai.Client(api_key=api_key, http_options=types.HttpOptions(api_version="v1beta"))
 
 # ---- Session state: remembers things between reruns ----
 defaults = {"started": False, "topic": "", "side": "FOR", "history": [], "evaluation": None}
