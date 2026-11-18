@@ -4,7 +4,7 @@ Debate any topic with Google Gemini. Pick **FOR** or **AGAINST**, and the AI tak
 
 Built with **Python**, **Streamlit** and the **Google Gemini API** (`google-genai`) as a college GenAI mini-project.
 
-**🔗 Live demo:** _add your Streamlit link here after deployment_
+**🔗 Live demo:** https://ai-debate-partner0.streamlit.app/
 
 ---
 
